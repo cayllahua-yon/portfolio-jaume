@@ -1,0 +1,48 @@
+.testimony {
+    /* border: 1px solid red; */
+    padding-block-start: 40px;
+    padding-block-end: 40px;
+}
+.testimony-image img{
+   max-inline-size: 100%; 
+}
+.testimony-description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* .testimony-title {
+    background: var(--purple);
+    align-self: flex-start;
+    color: var(--white);
+    font: var(--headline5);
+    padding-block-start: 4px;
+    padding-block-end: 4px;
+    padding-inline-start: 8px;
+    padding-inline-end: 8px;
+    box-shadow: -4px 4px 0px var(--white);
+    text-decoration: none;
+} */
+/* margin-inline-start: 4px; */
+
+@media screen and (min-width: 768px) {
+    .testimony {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        padding-block-start: 80px;
+        padding-block-end: 80px;
+    }
+    .testimony-description{
+        flex: 1;
+    }
+
+    /* .testimony:nth-of-type(odd (impar) - even (par)){ */
+    .testimony:nth-child(odd) .testimony-image{  /*Selecto de elemntos impaares*/
+        /* border: 1px solid yellow; */
+        order: 2; /*-1 1 2(derecha)*/
+        flex: 1;
+        text-align: center;
+    }
+}
