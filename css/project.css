@@ -1,18 +1,22 @@
-.testimony {
+.project {
     /* border: 1px solid red; */
     padding-block-start: 40px;
     padding-block-end: 40px;
 }
-.testimony-image img{
+.project-image {
+    display: flex;
+    justify-content: center;
+}
+.project-image img{
    max-inline-size: 100%; 
 }
-.testimony-description {
+.project-description {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-/* .testimony-title {
+/* .project-title {
     background: var(--purple);
     align-self: flex-start;
     color: var(--white);
@@ -27,19 +31,19 @@
 /* margin-inline-start: 4px; */
 
 @media screen and (min-width: 768px) {
-    .testimony {
+    .project {
         display: flex;
         align-items: center;
         gap: 32px;
         padding-block-start: 80px;
         padding-block-end: 80px;
     }
-    .testimony-description{
+    .project-description{
         flex: 1;
     }
 
-    /* .testimony:nth-of-type(odd (impar) - even (par)){ */
-    .testimony:nth-child(odd) .testimony-image{  /*Selecto de elemntos impaares*/
+    /* .project:nth-of-type(odd (impar) - even (par)){ */
+    .project:nth-child(odd) .project-image{  /*Selecto de elemntos impaares*/
         /* border: 1px solid yellow; */
         order: 2; /*-1 1 2(derecha)*/
         flex: 1;
