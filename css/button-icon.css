@@ -9,3 +9,13 @@
 .button-icon img{
     vertical-align: middle;
 }
+.button-icon.is-secondary{
+    color: var(--purple);
+    border-radius: initial;
+    border:initial;
+    padding: 16px;
+    background: initial;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 85px;
+}
