@@ -1,0 +1,72 @@
+.comment{
+    border-radius: 24px;
+    /* background: var(--purple) ;   */
+    padding-block-start: 3px;
+    padding-block-end: 0px;
+    padding-inline-start: 3px;
+    padding-inline-end: 0px; 
+    background: radial-gradient(at top left, rgba(255, 255, 255, 0.753) , rgba(255, 255, 255, 0) 100%), linear-gradient( 135deg, #72EDF2 0%, #5151E5 100%);
+  
+}
+
+
+.comment-borde {
+    /* background: rgba(255, 255, 255, 0.2); */
+    padding: 24px;
+    background: var(--gradient);
+    border-radius: 24px;
+
+}
+.comment-image {
+    display: flex;
+    justify-content: center;
+    /* width: 80px; */
+}
+.comment-image img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.comment-description{
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    text-align: center;
+}
+.comment-description p {
+    font: var(--headline4);
+    font-size: 16px;
+    line-height: 20px;
+    margin: 24px 0 0;
+}
+.comment-description span {
+    font: var(--headline5);
+    opacity: 0.5;
+    font-size: 12px;
+    
+}
+
+@media screen and (min-width: 768px) {
+    .comment-description p {
+        font: var(--headline4);
+        font-size: 24px;
+        line-height: initial;
+    }
+    .comment-description span {
+        font: var(--headline5);
+
+    }
+    .comment-borde{
+    padding-block-start: 80px;
+    padding-block-end: 80px;
+    padding-inline-start: 80px;
+    padding-inline-end: 80px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .comment-description p {
+        font: var(--headline4);       
+        line-height: initial;
+    }
+}
